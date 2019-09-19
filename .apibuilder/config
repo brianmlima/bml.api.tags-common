@@ -1,0 +1,10 @@
+# Generated with apibuilderproject.rb at 19/09/2019 12:39:58
+settings:
+  code.create.directories: true
+code:
+  bml:
+    tags-common:
+      version: 0.0.1
+      generators:
+        openapi:
+          target: src/tags-common
