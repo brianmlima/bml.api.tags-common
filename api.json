@@ -1,7 +1,32 @@
 {
   "name": "tags-common",
-  "apidoc": {"version": "0.14.68"},
-  "enums": {},
-  "models": {},
-  "resources": {}
+  "apidoc": {
+    "version": "0.14.68"
+  },
+  "enums": {
+    "visibility": {
+      "description": "Controls who is able to view an object",
+      "values": [
+        {"name": "user","description": "Only the creator can view this object"},
+        {"name": "client","description": "Any member of the client can view this object"},
+        {"name": "anyone","description": "Anybody, including non logged in users, can view this object"}
+      ]
+    },
+    "client_sort_option": {
+      "values": [{"name": "nickname"},{"name": "created_at"},{"name": "updated_at"},{"name": "visibility"}]
+    },
+    "sort_order": {
+      "values": [{"name": "asc","description":"Ascending sort order"},{"name": "desc","description":"Descending sort order"}]
+    }
+  },
+  "models": {
+    "error": {
+      "fields": [
+        { "name": "code", "type": "string", "description": "Machine readable code for this specific error message" },
+        { "name": "message", "type": "string", "description": "Description of the error" }
+      ]
+    }
+  },
+  "resources": {
+  }
 }
